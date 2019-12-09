@@ -54,8 +54,8 @@
 				<artifactId>antlr4test-maven-plugin</artifactId>
 				<version>1.11</version>
 				<configuration>
-					<verbose>false</verbose>
-					<showTree>false</showTree>
+					<verbose>true</verbose>
+					<showTree>true</showTree>
 					<entryPoint>compilationUnit</entryPoint>
 					<grammarName>Queen</grammarName>
 					<packageName></packageName>
