@@ -1,0 +1,5 @@
+public implementation HdStudent of Student {
+    public String name() {
+        return "hardcoded_name";
+    }
+}

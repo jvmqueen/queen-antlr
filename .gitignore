@@ -2,3 +2,4 @@
 .idea/
 queen-antlr.iml
 target/
+*.tokens

@@ -226,7 +226,7 @@ classDeclaration
 	;
 
 normalClassDeclaration
-	:	classModifier* 'class' Identifier typeParameters? superclass? superinterfaces? classBody
+	:	classModifier* 'implementation' Identifier typeParameters? superclass? superinterfaces? classBody
 	;
 
 classModifier
@@ -253,7 +253,7 @@ superclass
 	;
 
 superinterfaces
-	:	'implements' interfaceTypeList
+	:	'of' interfaceTypeList
 	;
 
 interfaceTypeList
@@ -910,8 +910,8 @@ primary
 
 primaryNoNewArray
 	:	literal
-	|	typeName ('[' ']')* '.' 'class'
-	|	'void' '.' 'class'
+	|	typeName ('[' ']')* '.' 'implementation'
+	|	'void' '.' 'implementation'
 	|	'this'
 	|	typeName '.' 'this'
 	|	'(' expression ')'
@@ -928,8 +928,8 @@ primaryNoNewArray_lf_arrayAccess
 
 primaryNoNewArray_lfno_arrayAccess
 	:	literal
-	|	typeName ('[' ']')* '.' 'class'
-	|	'void' '.' 'class'
+	|	typeName ('[' ']')* '.' 'implementation'
+	|	'void' '.' 'implementation'
 	|	'this'
 	|	typeName '.' 'this'
 	|	'(' expression ')'
@@ -960,9 +960,9 @@ primaryNoNewArray_lf_primary_lfno_arrayAccess_lf_primary
 
 primaryNoNewArray_lfno_primary
 	:	literal
-	|	typeName ('[' ']')* '.' 'class'
-	|	unannPrimitiveType ('[' ']')* '.' 'class'
-	|	'void' '.' 'class'
+	|	typeName ('[' ']')* '.' 'implementation'
+	|	unannPrimitiveType ('[' ']')* '.' 'implementation'
+	|	'void' '.' 'implementation'
 	|	'this'
 	|	typeName '.' 'this'
 	|	'(' expression ')'
@@ -979,9 +979,9 @@ primaryNoNewArray_lfno_primary_lf_arrayAccess_lfno_primary
 
 primaryNoNewArray_lfno_primary_lfno_arrayAccess_lfno_primary
 	:	literal
-	|	typeName ('[' ']')* '.' 'class'
-	|	unannPrimitiveType ('[' ']')* '.' 'class'
-	|	'void' '.' 'class'
+	|	typeName ('[' ']')* '.' 'implementation'
+	|	unannPrimitiveType ('[' ']')* '.' 'implementation'
+	|	'void' '.' 'implementation'
 	|	'this'
 	|	typeName '.' 'this'
 	|	'(' expression ')'

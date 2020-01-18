@@ -1,4 +1,4 @@
-public class Currency {
+public implementation Currency {
   public String getCode(Currency this) {
   }
 }
