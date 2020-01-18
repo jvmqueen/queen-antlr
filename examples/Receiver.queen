@@ -1,5 +1,5 @@
-public implementation Currency {
-  public String getCode(Currency this) {
+public implementation Currency of ICurrency{
+  public String getCode(Currency test) {
   }
 }
 

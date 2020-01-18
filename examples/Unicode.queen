@@ -1,5 +1,5 @@
-implementation Unicode {
-        public static void main(String[] args) {
-                System.out.println("A = \uuu0041");
-        }
+implementation Unicode of IUnicode {
+    public static void main(String[] args) {
+        System.out.println("A = \uuu0041");
+    }
 }

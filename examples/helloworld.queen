@@ -1,5 +1,5 @@
-public implementation HelloWorld {
-   public static void main(String[] args) { 
+public implementation HelloWorld of Main {
+   public void main(String[] args) {
       System.out.println("Hello, World");
    }
 }

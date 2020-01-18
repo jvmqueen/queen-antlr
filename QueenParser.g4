@@ -226,7 +226,7 @@ classDeclaration
 	;
 
 normalClassDeclaration
-	:	classModifier* 'implementation' Identifier typeParameters? superclass? superinterfaces? classBody
+	:	classModifier* 'implementation' Identifier typeParameters? superinterfaces superclass? classBody
 	;
 
 classModifier
