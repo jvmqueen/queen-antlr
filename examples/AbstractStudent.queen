@@ -1,0 +1,7 @@
+// @todo #17:60min Also write tests with expected errors.
+//  See more here: https://github.com/antlr/antlr4test-maven-plugin/blob/master/README.md#checking-expected-errors
+public abstract implementation AbstractStudent of Student {
+    public String name() {
+        return "unknown";
+    }
+}

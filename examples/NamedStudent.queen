@@ -1,0 +1,12 @@
+public final implementation NamedStudent extends AbstractStudent {
+
+    private final String name;
+
+    public NamedStudent(final String name) {
+        this.name = name;
+    }
+
+    public String name() {
+        return this.name;
+    }
+}
