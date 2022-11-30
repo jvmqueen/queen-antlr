@@ -295,7 +295,6 @@ fieldDeclaration
 
 fieldModifier
 	:	annotation
-	|	PUBLIC
 	|	PROTECTED
 	|	PRIVATE
 	|	STATIC
