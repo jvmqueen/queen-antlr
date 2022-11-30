@@ -1,4 +1,4 @@
-public implementation Currency of ICurrency{
+public final implementation Currency of ICurrency{
   public String getCode(Currency test) {
   }
 }

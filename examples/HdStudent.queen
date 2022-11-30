@@ -1,4 +1,4 @@
-public implementation HdStudent of Student {
+public final implementation HdStudent of Student {
     public String name() {
         return "hardcoded_name";
     }

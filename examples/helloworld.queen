@@ -1,4 +1,4 @@
-public implementation HelloWorld of Main {
+public final implementation HelloWorld of Main {
    public void main(String[] args) {
       System.out.println("Hello, World");
    }

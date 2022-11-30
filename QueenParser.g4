@@ -226,7 +226,7 @@ classDeclaration
 	;
 
 normalClassDeclaration
-	:	classModifier* IMPLEMENTATION Identifier typeParameters? superinterfaces superclass? classBody
+	:	classModifier* classAbstractOrFinal IMPLEMENTATION Identifier typeParameters? superinterfaces superclass? classBody
 	;
 
 classModifier
@@ -234,11 +234,14 @@ classModifier
 	|	PUBLIC
 	|	PROTECTED
 	|	PRIVATE
-	|	ABSTRACT
 	|	STATIC
-	|	FINAL
 	|	STRICTFP
 	;
+
+classAbstractOrFinal
+   : ABSTRACT
+   | FINAL
+   ;
 
 typeParameters
 	:	'<' typeParameterList '>'
