@@ -1,4 +1,4 @@
-public abstract implementation HdStudent of Student {
+public final implementation OtherStudent extends HdStudent {
     public String name() {
         return "hardcoded_name";
     }
