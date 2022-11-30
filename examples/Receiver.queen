@@ -1,3 +1,4 @@
+//@todo #15:30min Attributes of a Queen class should never be public.
 public final implementation Currency of ICurrency{
   public String getCode(Currency test) {
   }

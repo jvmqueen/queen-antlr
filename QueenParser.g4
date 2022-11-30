@@ -226,9 +226,8 @@ classDeclaration
 	;
 
 normalClassDeclaration
-//@todo #6:60min An implementation should be able to use extends without of.
-//    : classModifier* 'class' Identifier typeParameters? superclass? superinterfaces? classBody
-	:	classModifier* classAbstractOrFinal IMPLEMENTATION Identifier typeParameters? superinterfaces superclass? classBody
+//@todo #15:60min More tests for classModifier.
+	:	classModifier* classAbstractOrFinal IMPLEMENTATION Identifier typeParameters? superClassAndOrInterfaces classBody
 	;
 
 classModifier
@@ -260,6 +259,12 @@ superclass
 superinterfaces
 	:	OF interfaceTypeList
 	;
+
+superClassAndOrInterfaces
+   : superclass
+   | superclass superinterfaces
+   | superinterfaces
+   ;
 
 interfaceTypeList
 	:	interfaceType (',' interfaceType)*
