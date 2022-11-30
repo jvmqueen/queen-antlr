@@ -1,4 +1,4 @@
-implementation Unicode of IUnicode {
+final implementation Unicode of IUnicode {
     public static void main(String[] args) {
         System.out.println("A = \uuu0041");
     }

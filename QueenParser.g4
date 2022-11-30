@@ -226,7 +226,9 @@ classDeclaration
 	;
 
 normalClassDeclaration
-	:	classModifier* IMPLEMENTATION Identifier typeParameters? superinterfaces superclass? classBody
+//@todo #6:60min An implementation should be able to use extends without of.
+//    : classModifier* 'class' Identifier typeParameters? superclass? superinterfaces? classBody
+	:	classModifier* classAbstractOrFinal IMPLEMENTATION Identifier typeParameters? superinterfaces superclass? classBody
 	;
 
 classModifier
@@ -234,11 +236,14 @@ classModifier
 	|	PUBLIC
 	|	PROTECTED
 	|	PRIVATE
-	|	ABSTRACT
 	|	STATIC
-	|	FINAL
 	|	STRICTFP
 	;
+
+classAbstractOrFinal
+   : ABSTRACT
+   | FINAL
+   ;
 
 typeParameters
 	:	'<' typeParameterList '>'
