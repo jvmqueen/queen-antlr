@@ -1,0 +1,6 @@
+//enums are NOT allowed in Queenlang.
+enum Level {
+  LOW,
+  MEDIUM,
+  HIGH
+}
