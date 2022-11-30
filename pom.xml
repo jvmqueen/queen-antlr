@@ -58,7 +58,7 @@
 					<entryPoint>compilationUnit</entryPoint>
 					<grammarName>Queen</grammarName>
 					<packageName></packageName>
-					<exampleFiles>examples/</exampleFiles>
+					<exampleFiles>tests/</exampleFiles>
 				</configuration>
 				<executions>
 					<execution>

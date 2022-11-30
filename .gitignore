@@ -3,3 +3,4 @@
 queen-antlr.iml
 target/
 *.tokens
+gen/
