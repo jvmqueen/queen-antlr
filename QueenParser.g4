@@ -222,7 +222,6 @@ typeDeclaration
 
 classDeclaration
 	:	normalClassDeclaration
-	|	enumDeclaration
 	;
 
 normalClassDeclaration
@@ -496,30 +495,6 @@ explicitConstructorInvocation
 	|	primary '.' typeArguments? SUPER '(' argumentList? ')' ';'
 	;
 
-enumDeclaration
-	:	classModifier* ENUM Identifier superinterfaces? enumBody
-	;
-
-enumBody
-	:	'{' enumConstantList? ','? enumBodyDeclarations? '}'
-	;
-
-enumConstantList
-	:	enumConstant (',' enumConstant)*
-	;
-
-enumConstant
-	:	enumConstantModifier* Identifier ('(' argumentList? ')')? classBody?
-	;
-
-enumConstantModifier
-	:	annotation
-	;
-
-enumBodyDeclarations
-	:	';' classBodyDeclaration*
-	;
-
 /*
  * Productions from §9 (Interfaces)
  */
@@ -784,12 +759,7 @@ switchLabels
 
 switchLabel
 	:	CASE constantExpression ':'
-	|	CASE enumConstantName ':'
 	|	DEFAULT ':'
-	;
-
-enumConstantName
-	:	Identifier
 	;
 
 whileStatement
