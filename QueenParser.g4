@@ -499,12 +499,11 @@ interfaceDeclaration
 	;
 
 normalInterfaceDeclaration
-	:	interfaceModifier* INTERFACE Identifier typeParameters? extendsInterfaces? interfaceBody
+	:	annotation* interfaceModifier? INTERFACE Identifier typeParameters? extendsInterfaces? interfaceBody
 	;
 
 interfaceModifier
-	:	annotation
-	|	PUBLIC
+	:	PUBLIC
 	|	PROTECTED
 	|	PRIVATE
 	|	ABSTRACT
@@ -553,7 +552,7 @@ interfaceMethodModifier
 	;
 
 annotationTypeDeclaration
-	:	interfaceModifier* '@' INTERFACE Identifier annotationTypeBody
+	:	annotation* interfaceModifier? '@' INTERFACE Identifier annotationTypeBody
 	;
 
 annotationTypeBody
