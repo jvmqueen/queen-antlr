@@ -221,13 +221,11 @@ typeDeclaration
  */
 
 classDeclaration
-//@todo #15:60min More tests for classModifier.
-	:	classModifier* classAbstractOrFinal IMPLEMENTATION Identifier typeParameters? superClassAndOrInterfaces classBody
+	:	annotation* classModifier? classAbstractOrFinal IMPLEMENTATION Identifier typeParameters? superClassAndOrInterfaces classBody
 	;
 
 classModifier
-	:	annotation
-	|	PUBLIC
+	:	PUBLIC
 	|	PROTECTED
 	|	PRIVATE
 	|	STATIC
