@@ -221,10 +221,6 @@ typeDeclaration
  */
 
 classDeclaration
-	:	normalClassDeclaration
-	;
-
-normalClassDeclaration
 //@todo #15:60min More tests for classModifier.
 	:	classModifier* classAbstractOrFinal IMPLEMENTATION Identifier typeParameters? superClassAndOrInterfaces classBody
 	;
