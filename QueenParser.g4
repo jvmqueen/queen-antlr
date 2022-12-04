@@ -497,7 +497,7 @@ interfaceDeclaration
 	;
 
 normalInterfaceDeclaration
-	:	annotation* interfaceModifier? INTERFACE Identifier typeParameters? extendsInterfaces? interfaceBody
+	:	annotation* interfaceModifier* INTERFACE Identifier typeParameters? extendsInterfaces? interfaceBody
 	;
 
 interfaceModifier
