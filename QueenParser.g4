@@ -460,12 +460,11 @@ staticInitializer
 	;
 
 constructorDeclaration
-	:	constructorModifier* constructorDeclarator throws_? constructorBody
+	:	annotation* constructorModifier? constructorDeclarator throws_? constructorBody
 	;
 
 constructorModifier
-	:	annotation
-	|	PUBLIC
+    :	PUBLIC
 	|	PROTECTED
 	|	PRIVATE
 	;
