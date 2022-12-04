@@ -221,7 +221,7 @@ typeDeclaration
  */
 
 classDeclaration
-	:	annotation* classModifier? classAbstractOrFinal IMPLEMENTATION Identifier typeParameters? superClassAndOrInterfaces classBody
+	:	annotation* classModifier* classAbstractOrFinal IMPLEMENTATION Identifier typeParameters? superClassAndOrInterfaces classBody
 	;
 
 classModifier
@@ -374,12 +374,11 @@ unannArrayType
 	;
 
 methodDeclaration
-	:	methodModifier* methodHeader methodBody
+	:	annotation* methodModifier* methodHeader methodBody
 	;
 
 methodModifier
-	:	annotation
-	|	PUBLIC
+	:	PUBLIC
 	|	PROTECTED
 	|	PRIVATE
 	|	ABSTRACT
