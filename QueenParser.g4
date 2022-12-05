@@ -550,7 +550,7 @@ interfaceMethodModifier
 	;
 
 annotationTypeDeclaration
-	:	annotation* interfaceModifier? '@' INTERFACE Identifier annotationTypeBody
+	:	annotation* interfaceModifier* '@' INTERFACE Identifier annotationTypeBody
 	;
 
 annotationTypeBody
