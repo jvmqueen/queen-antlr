@@ -100,11 +100,7 @@ dims
 	;
 
 typeParameter
-	:	typeParameterModifier* Identifier typeBound?
-	;
-
-typeParameterModifier
-	:	annotation
+	:	annotation* Identifier typeBound?
 	;
 
 typeBound
