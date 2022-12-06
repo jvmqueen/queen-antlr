@@ -279,12 +279,11 @@ classMemberDeclaration
 	;
 
 fieldDeclaration
-	:	fieldModifier* unannType variableDeclaratorList ';'
+	:	annotation* fieldModifier* unannType variableDeclaratorList ';'
 	;
 
 fieldModifier
-	:	annotation
-	|	PROTECTED
+	:	PROTECTED
 	|	PRIVATE
 	|	STATIC
 	|	FINAL
