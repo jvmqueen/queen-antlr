@@ -399,14 +399,12 @@ methodDeclarator
 	;
 
 formalParameterList
-	:	receiverParameter
-	|	formalParameters ',' lastFormalParameter
+	:	formalParameters ',' lastFormalParameter
 	|	lastFormalParameter
 	;
 
 formalParameters
 	:	formalParameter (',' formalParameter)*
-	|	receiverParameter (',' formalParameter)*
 	;
 
 formalParameter
@@ -421,10 +419,6 @@ variableModifier
 lastFormalParameter
 	:	variableModifier* unannType annotation* '...' variableDeclaratorId
 	|	formalParameter
-	;
-
-receiverParameter
-	:	annotation* unannType (Identifier '.')? THIS
 	;
 
 throws_
