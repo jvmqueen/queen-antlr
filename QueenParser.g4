@@ -525,12 +525,11 @@ constantModifier
 	;
 
 interfaceMethodDeclaration
-	:	interfaceMethodModifier* methodHeader methodBody
+	:	annotation* interfaceMethodModifier* methodHeader methodBody
 	;
 
 interfaceMethodModifier
-	:	annotation
-	|	PUBLIC
+	:	PUBLIC
 	|	ABSTRACT
 	|	DEFAULT
 	|	STATIC
