@@ -515,12 +515,11 @@ interfaceMemberDeclaration
 	;
 
 constantDeclaration
-	:	constantModifier* unannType variableDeclaratorList ';'
+	:	annotation* constantModifier* unannType variableDeclaratorList ';'
 	;
 
 constantModifier
-	:	annotation
-	|	PUBLIC
+	:	PUBLIC
 	|	STATIC
 	|	FINAL
 	;
