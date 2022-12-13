@@ -546,7 +546,6 @@ annotationTypeBody
 
 annotationTypeMemberDeclaration
 	:	annotationTypeElementDeclaration
-	|	constantDeclaration
 	|	classDeclaration
 	|	interfaceDeclaration
 	|	';'
