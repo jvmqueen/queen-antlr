@@ -23,6 +23,7 @@ DOUBLE : 'double';
 ELSE : 'else';
 EXTENDS : 'extends';
 FINAL : 'final';
+MUTABLE: 'mutable';
 FINALLY : 'finally';
 FLOAT : 'float';
 FOR : 'for';

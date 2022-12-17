@@ -280,7 +280,7 @@ fieldModifier
 	:	PROTECTED
 	|	PRIVATE
 	|	STATIC
-	|	FINAL
+	|	MUTABLE
 	|	TRANSIENT
 	|	VOLATILE
 	;
@@ -515,7 +515,6 @@ constantDeclaration
 constantModifier
 	:	PUBLIC
 	|	STATIC
-	|	FINAL
 	;
 
 interfaceMethodDeclaration
