@@ -552,12 +552,11 @@ annotationTypeMemberDeclaration
 	;
 
 annotationTypeElementDeclaration
-	:	annotationTypeElementModifier* unannType Identifier '(' ')' dims? defaultValue? ';'
+	:	annotation* annotationTypeElementModifier* unannType Identifier '(' ')' dims? defaultValue? ';'
 	;
 
 annotationTypeElementModifier
-	:	annotation
-	|	PUBLIC
+	:	PUBLIC
 	|	ABSTRACT
 	;
 
