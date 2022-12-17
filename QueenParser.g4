@@ -217,7 +217,7 @@ typeDeclaration
  */
 
 classDeclaration
-	:	annotation* classModifier* classAbstractOrFinal IMPLEMENTATION Identifier typeParameters? superClassAndOrInterfaces classBody
+	:	annotation* classModifier* classAbstractOrFinal IMPLEMENTATION Identifier typeParameters? superclass? superinterfaces? classBody
 	;
 
 classModifier
@@ -248,12 +248,6 @@ superclass
 superinterfaces
 	:	OF interfaceTypeList
 	;
-
-superClassAndOrInterfaces
-   : superclass
-   | superclass superinterfaces
-   | superinterfaces
-   ;
 
 interfaceTypeList
 	:	interfaceType (',' interfaceType)*
