@@ -552,7 +552,7 @@ annotationTypeMemberDeclaration
 	;
 
 annotationTypeElementDeclaration
-	:	annotation* annotationTypeElementModifier* unannType Identifier '(' ')' dims? defaultValue? ';'
+	:	annotation* annotationTypeElementModifier* unannType Identifier '(' ')' defaultValue? ';'
 	;
 
 annotationTypeElementModifier
