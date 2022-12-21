@@ -402,7 +402,7 @@ formalParameters
 	;
 
 formalParameter
-	:	variableModifier* unannType variableDeclaratorId
+	:	annotation* MUTABLE? unannType variableDeclaratorId
 	;
 
 variableModifier
@@ -411,7 +411,7 @@ variableModifier
 	;
 
 lastFormalParameter
-	:	variableModifier* unannType annotation* '...' variableDeclaratorId
+	:	annotation* MUTABLE? unannType annotation* '...' variableDeclaratorId
 	|	formalParameter
 	;
 

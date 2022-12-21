@@ -2,7 +2,7 @@ public final implementation NamedStudent extends AbstractStudent {
 
     private String name;
 
-    public NamedStudent(final String name) {
+    public NamedStudent(String name) {
         this.name = name;
     }
 
