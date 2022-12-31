@@ -1,5 +1,10 @@
-//A Queen grammar for ANTLR 4 based on https://github.com/antlr/grammars-v4/blob/master/java8/Java8Parser.g4
+//A Queen grammar for ANTLR 4 based on the Java 8 ANTLR Grammar.
 //We start from Java 8 and take out/modify stuff that we do not like!
+//
+//  TERMINOLOGY
+//
+//  unann -> unannotated
+//  lf    -> looking for
 parser grammar QueenParser;
 
 options {
