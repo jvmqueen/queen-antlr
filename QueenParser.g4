@@ -831,7 +831,7 @@ catchFormalParameter
 	;
 
 catchType
-	:	unannClassType ('|' classType)*
+	:	unannClassType ('|' unannClassType)*
 	;
 
 finally_
