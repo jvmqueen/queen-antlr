@@ -5,6 +5,7 @@
 //
 //  unann -> unannotated
 //  lf    -> looking for
+//  dim   -> dimension (array dimension square brackets)
 parser grammar QueenParser;
 
 options {
@@ -101,8 +102,12 @@ arrayType
 	;
 
 dims
-	:	annotation* '[' ']' (annotation* '[' ']')*
+	:	dim (dim)*
 	;
+
+dim
+   : annotation* '[' ']'
+   ;
 
 typeParameter
 	:	annotation* Identifier typeBound?
