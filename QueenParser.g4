@@ -109,6 +109,10 @@ dim
    : annotation* '[' ']'
    ;
 
+unannDim
+   : '[' ']'
+   ;
+
 typeParameter
 	:	annotation* Identifier typeBound?
 	;
@@ -873,7 +877,7 @@ primary
 
 primaryNoNewArray
 	:	literal
-	|	typeName ('[' ']')* '.' IMPLEMENTATION
+	|	typeName (unannDim)* '.' IMPLEMENTATION
 	|	VOID '.' IMPLEMENTATION
 	|	THIS
 	|	typeName '.' THIS
@@ -891,7 +895,7 @@ primaryNoNewArray_lf_arrayAccess
 
 primaryNoNewArray_lfno_arrayAccess
 	:	literal
-	|	typeName ('[' ']')* '.' IMPLEMENTATION
+	|	typeName (unannDim)* '.' IMPLEMENTATION
 	|	VOID '.' IMPLEMENTATION
 	|	THIS
 	|	typeName '.' THIS
@@ -923,8 +927,8 @@ primaryNoNewArray_lf_primary_lfno_arrayAccess_lf_primary
 
 primaryNoNewArray_lfno_primary
 	:	literal
-	|	typeName ('[' ']')* '.' IMPLEMENTATION
-	|	unannPrimitiveType ('[' ']')* '.' IMPLEMENTATION
+	|	typeName (unannDim)* '.' IMPLEMENTATION
+	|	unannPrimitiveType (unannDim)* '.' IMPLEMENTATION
 	|	VOID '.' IMPLEMENTATION
 	|	THIS
 	|	typeName '.' THIS
@@ -942,8 +946,8 @@ primaryNoNewArray_lfno_primary_lf_arrayAccess_lfno_primary
 
 primaryNoNewArray_lfno_primary_lfno_arrayAccess_lfno_primary
 	:	literal
-	|	typeName ('[' ']')* '.' IMPLEMENTATION
-	|	unannPrimitiveType ('[' ']')* '.' IMPLEMENTATION
+	|	typeName (unannDim)* '.' IMPLEMENTATION
+	|	unannPrimitiveType (unannDim)* '.' IMPLEMENTATION
 	|	VOID '.' IMPLEMENTATION
 	|	THIS
 	|	typeName '.' THIS
