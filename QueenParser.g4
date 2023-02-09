@@ -1051,7 +1051,7 @@ methodReference
 	|	primary '::' typeArguments? Identifier
 	|	SUPER '::' typeArguments? Identifier
 	|	typeName '.' SUPER '::' typeArguments? Identifier
-	|	classType '::' typeArguments? NRE
+	|	classType '::' typeArguments? NEW
 	|	arrayType '::' NEW
 	;
 
