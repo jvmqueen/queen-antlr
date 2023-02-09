@@ -959,19 +959,23 @@ primaryNoNewArray_lfno_primary_lfno_arrayAccess_lfno_primary
 	;
 
 classInstanceCreationExpression
-	:	NEW typeArguments? annotation* Identifier ('.' annotation* Identifier)* typeArgumentsOrDiamond? '(' argumentList? ')' classBody?
-	|	expressionName '.' NEW typeArguments? annotation* Identifier typeArgumentsOrDiamond? '(' argumentList? ')' classBody?
-	|	primary '.' NEW typeArguments? annotation* Identifier typeArgumentsOrDiamond? '(' argumentList? ')' classBody?
+	:	NEW typeArguments? constructorIdentifier ('.' constructorIdentifier)* typeArgumentsOrDiamond? '(' argumentList? ')' classBody?
+	|	expressionName '.' NEW typeArguments? constructorIdentifier typeArgumentsOrDiamond? '(' argumentList? ')' classBody?
+	|	primary '.' NEW typeArguments? constructorIdentifier typeArgumentsOrDiamond? '(' argumentList? ')' classBody?
 	;
 
 classInstanceCreationExpression_lf_primary
-	:	'.' NEW typeArguments? annotation* Identifier typeArgumentsOrDiamond? '(' argumentList? ')' classBody?
+	:	'.' NEW typeArguments? constructorIdentifier typeArgumentsOrDiamond? '(' argumentList? ')' classBody?
 	;
 
 classInstanceCreationExpression_lfno_primary
-	:	NEW typeArguments? annotation* Identifier ('.' annotation* Identifier)* typeArgumentsOrDiamond? '(' argumentList? ')' classBody?
-	|	expressionName '.' NEW typeArguments? annotation* Identifier typeArgumentsOrDiamond? '(' argumentList? ')' classBody?
+	:	NEW typeArguments? constructorIdentifier ('.' constructorIdentifier)* typeArgumentsOrDiamond? '(' argumentList? ')' classBody?
+	|	expressionName '.' NEW typeArguments? constructorIdentifier typeArgumentsOrDiamond? '(' argumentList? ')' classBody?
 	;
+
+constructorIdentifier
+   : annotation* Identifier
+   ;
 
 typeArgumentsOrDiamond
 	:	typeArguments
