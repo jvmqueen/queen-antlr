@@ -13,7 +13,7 @@ To get the latest release from Github Packages, simply add the following to your
 <dependency>
     <groupId>org.queenlang</groupId>
     <artifactId>queen-antlr</artifactId>
-    <version>not-yet-released</version>
+    <version>0.0.1</version>
 </dependency>
 ```
 
