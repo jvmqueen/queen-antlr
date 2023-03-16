@@ -4,7 +4,7 @@
 
 [![Build Status](https://travis-ci.org/jvmqueen/queen-antlr.svg?branch=master)](https://travis-ci.org/jvmqueen/queen-antlr)
 
-This repo contains [Queenlang](https://queenlang.org/)'s ANTLR4 grammer, as well as the Java 8 parser generated
+This repo contains [Queenlang](https://queenlang.org/)'s ANTLR4 grammar, as well as the Java 8 parser generated
 by ANTLR4.
 
 To get the latest release from Github Packages, simply add the following to your ``pom.xml``:

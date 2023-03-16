@@ -1,6 +1,5 @@
 //Queen grammar for ANTLR4
 //based on the Java8 Lexer: https://github.com/antlr/grammars-v4/blob/master/java8/Java8Lexer.g4
-//we basically start from Java and take out/modify what we don't like. Things such as assert, static, null etc.
 
 lexer grammar QueenLexer;
 
