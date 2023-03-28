@@ -1,0 +1,13 @@
+public final implementation CStyleVariables of Variables {
+
+   private int a[];
+
+   public CStyleVariables(int a[]) {
+       this.a = a;
+   }
+
+   public void someMethod(int a[]) {
+      int[] other[] = new int[5][5];
+   }
+
+}

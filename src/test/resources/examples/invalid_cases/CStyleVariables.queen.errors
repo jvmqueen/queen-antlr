@@ -1,0 +1,5 @@
+line 3:16 no viable alternative at input 'privateinta['
+line 5:31 mismatched input '[' expecting ')'
+line 9:31 missing ')' at '['
+line 9:33 extraneous input ')' expecting {'{', ';'}
+line 10:17 mismatched input '[' expecting {'[', Identifier, '@'}
