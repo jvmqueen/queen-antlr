@@ -308,7 +308,7 @@ variableDeclarator
 	;
 
 variableDeclaratorId
-	:	Identifier dims?
+	:	Identifier
 	;
 
 variableInitializer
