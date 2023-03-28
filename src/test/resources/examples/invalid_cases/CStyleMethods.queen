@@ -1,0 +1,19 @@
+public final implementation CStyleMethods of Methods {
+
+   public CStyleMethods() {
+       this.a = a;
+       System.out.println("Constructed CStyleMethods!");
+   }
+
+   public void someMethod(int a)[][] {
+   }
+
+   public int[] someOtherMethod(int a)[] {
+      return new int[5][5];
+   }
+
+   public int[] someOtherMethodWhichIsOk(int a) {
+      return new int[5];
+   }
+
+}

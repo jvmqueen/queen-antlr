@@ -403,7 +403,7 @@ result
 	;
 
 methodDeclarator
-	:	Identifier '(' formalParameterList? ')' dims?
+	:	Identifier '(' formalParameterList? ')'
 	;
 
 formalParameterList
