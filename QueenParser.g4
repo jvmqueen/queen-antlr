@@ -287,7 +287,7 @@ classMemberDeclaration
 	;
 
 fieldDeclaration
-	:	annotation* fieldModifier* unannType variableDeclaratorList ';'
+	:	annotation* fieldModifier* unannType variableDeclarator ';'
 	;
 
 fieldModifier
@@ -528,7 +528,7 @@ interfaceMemberDeclaration
 	;
 
 constantDeclaration
-	:	annotation* constantModifier* unannType variableDeclaratorList ';'
+	:	annotation* constantModifier* unannType variableDeclarator ';'
 	;
 
 constantModifier
@@ -651,6 +651,10 @@ localVariableDeclarationStatement
 	;
 
 localVariableDeclaration
+	:	variableModifier* unannType variableDeclarator
+	;
+
+forInitlocalVariableDeclaration
 	:	variableModifier* unannType variableDeclaratorList
 	;
 
@@ -782,7 +786,7 @@ basicForStatementNoShortIf
 
 forInit
 	:	statementExpressionList
-	|	localVariableDeclaration
+	|	forInitlocalVariableDeclaration
 	;
 
 forUpdate
