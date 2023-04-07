@@ -292,6 +292,7 @@ fieldDeclaration
 
 fieldModifier
 	:	PROTECTED
+	|   PUBLIC
 	|	PRIVATE
 	|	STATIC
 	|	MUTABLE

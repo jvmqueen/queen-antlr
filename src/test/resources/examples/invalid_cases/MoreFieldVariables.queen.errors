@@ -1,2 +1,2 @@
 line 3:20 mismatched input ',' expecting {'instanceof', ';', '.', '>', '<', '==', '<=', '>=', '!=', '&&', '||', '++', '--', '+', '-', '*', '/', '&', '|', '^', '%', '::'}
-line 7:16 no viable alternative at input 'privateintn,'
+line 7:16 no viable alternative at input 'private int n,'

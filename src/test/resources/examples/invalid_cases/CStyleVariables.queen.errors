@@ -1,4 +1,4 @@
-line 3:16 no viable alternative at input 'privateinta['
+line 3:16 no viable alternative at input 'private int a['
 line 5:31 mismatched input '[' expecting ')'
 line 9:31 mismatched input '[' expecting ')'
 line 10:17 mismatched input '[' expecting {'[', Identifier, '@'}
