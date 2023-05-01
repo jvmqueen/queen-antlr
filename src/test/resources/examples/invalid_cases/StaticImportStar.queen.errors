@@ -1,0 +1,2 @@
+line 4:17 no viable alternative at input 'import com.other.import'
+line 5:0 mismatched input 'import' expecting <EOF>

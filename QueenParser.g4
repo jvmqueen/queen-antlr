@@ -200,8 +200,6 @@ packageModifier
 importDeclaration
 	:	singleTypeImportDeclaration
 	|	typeImportOnDemandDeclaration
-	|	singleStaticImportDeclaration
-	|	staticImportOnDemandDeclaration
 	;
 
 singleTypeImportDeclaration
@@ -210,14 +208,6 @@ singleTypeImportDeclaration
 
 typeImportOnDemandDeclaration
 	:	IMPORT packageOrTypeName '.' '*' ';'
-	;
-
-singleStaticImportDeclaration
-	:	IMPORT STATIC typeName '.' Identifier ';'
-	;
-
-staticImportOnDemandDeclaration
-	:	IMPORT STATIC typeName '.' '*' ';'
 	;
 
 typeDeclaration

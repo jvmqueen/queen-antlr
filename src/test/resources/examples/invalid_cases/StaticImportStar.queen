@@ -1,0 +1,9 @@
+package com.example;
+
+import com.example.api.Import;
+import com.other.import.List;
+import static com.example.Test.*;
+
+public final implementation StaticImportStar of Import {
+
+}
