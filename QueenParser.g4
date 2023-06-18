@@ -221,7 +221,7 @@ typeDeclaration
  */
 
 classDeclaration
-	:	annotation* classModifier* classAbstractOrFinal IMPLEMENTATION Identifier typeParameters? superclass? superinterfaces? classBody
+	:	annotation* classModifier* classAbstractOrFinal? IMPLEMENTATION Identifier typeParameters? superclass? superinterfaces? classBody
 	;
 
 classModifier
@@ -286,6 +286,7 @@ fieldModifier
 	|	PRIVATE
 	|	STATIC
 	|	MUTABLE
+	|   FINAL
 	|	TRANSIENT
 	|	VOLATILE
 	;
@@ -418,6 +419,7 @@ variableModifier
 formalParameterModifier
 	:	annotation
 	|	MUTABLE
+	|   FINAL
 	;
 
 lastFormalParameter

@@ -1,5 +1,6 @@
-public final implementation HelloWorld of Main {
-   public void main(String[] args) {
+public implementation HelloWorld of Main {
+   private final String s = "final in field, classes and param declarations is accepted, but unnecessary";
+   public void main(final String[] args) {
       System.out.println("Hello, World");
    }
 }

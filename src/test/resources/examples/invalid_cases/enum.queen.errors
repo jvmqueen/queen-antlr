@@ -1,1 +1,1 @@
-line 2:0 mismatched input 'enum' expecting {'abstract', 'final', 'import', 'interface', 'package', 'private', 'protected', 'public', 'static', 'strictfp', ';', '@'}
+line 2:0 mismatched input 'enum' expecting {'abstract', 'implementation', 'final', 'import', 'interface', 'package', 'private', 'protected', 'public', 'static', 'strictfp', ';', '@'}
