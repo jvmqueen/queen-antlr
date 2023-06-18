@@ -4,8 +4,6 @@
 [![DevOps By Rultor.com](http://www.rultor.com/b/jvmqueen/queen-antlr)](http://www.rultor.com/p/jvmqueen/queen-antlr)
 [![We recommend IntelliJ IDEA](http://amihaiemil.github.io/images/intellij-idea-recommend.svg)](https://www.jetbrains.com/idea/)
 
-[![Build Status](https://travis-ci.org/jvmqueen/queen-antlr.svg?branch=master)](https://travis-ci.org/jvmqueen/queen-antlr)
-
 This repo contains [Queenlang](https://queenlang.org/)'s ANTLR4 grammar, as well as the Java 8 parser generated
 by ANTLR4.
 
